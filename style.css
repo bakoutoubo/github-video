@@ -198,7 +198,7 @@ padding-top: 50px;
     opacity: 0;
     transition: opacity 0.5s;
    }
-  .heart-button:active .unique-icon {
+  .heart-button:hover .unique-icon {
       opacity: 1;
       
   }
