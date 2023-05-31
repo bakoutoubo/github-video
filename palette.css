@@ -100,30 +100,49 @@ opacity: 0;
  }
  .card_entrée{
    background-color:white;
+   width: 350px;
    height: 68px;
    border-radius: 20px;
    margin-left: 10px;
    box-shadow: 0px 4px 15px grey;
-   
+   cursor: pointer;
  }
- .anim{
+ .anim {
   display: flex;
-  width: 150%;
- }
- .card_entrée2{
-  background-color:white;
-  width: 80px;
-  height: 60px;
-  border-radius: 20px;
-  margin-left: 10px;
-  box-shadow: 0px 4px 15px grey;
-  
+  width: 450px;
 }
+.circle{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.card_entrée:target + .icon-anim,
+.card_entrée:hover + .icon-anim {
+  display: block;
+  transition: transform 0.8s ease-in-out;
+  transform: translateX(-80px);
+}
+.card_entrée:hover .number {
+  transform: translateX(-50px);
+  transition: transform 0.8s ease-in-out;
+}
+
+
+.icon-anim {
+  display: none;
+  background-color: #99E2D0;
+  width: 80px;
+  height: 68px;
+  border-radius: 0px 20px 20px 0px;
+  transition: transform 0.3s ease-in-out;
+
+}
+
  .number{
   display: flex;
   flex-direction: row-reverse;
   margin-top: -18px;
-  margin-right: 30px;
+  margin-right: 40px;
  }
  .number2{
   display: flex;
@@ -163,11 +182,14 @@ opacity: 0;
   background:linear-gradient(#9356DC,#FF79DA )  ;
   border: none;
   margin-top: 50px;
- transition-duration: 800ms;
+ 
  margin-bottom: 50px;
+ 
 
 
 }
+
+
 footer{
   background-color:#353535;
   height: 200px;
