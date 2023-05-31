@@ -11,6 +11,15 @@
     margin-left: 95px;
     margin-top: 14px; 
  }
+ form{
+  width: 5px;
+ 
+ }
+ input{
+  border: none;
+  background-color: #d2d2d2;
+  margin-top: 2px;
+ }
  .location{
   margin-top: 5px;
   display: flex;
@@ -60,7 +69,7 @@
    background:linear-gradient(#9356DC,#FF79DA )  ;
    border: none;
    margin-top: 5px;
-
+  transition-duration: 800ms;
  
 
  }
@@ -169,33 +178,29 @@ padding-top: 50px;
     justify-content: space-between;
     
    }
-   @keyframes fillHeart {
-    0% {
-      color: white;
-    }
    
-    100% {
-      font-size: 15px;
-     color:#9356dc; 
-    }
+   .heart-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+   
   }
+   .fa-regular{
+    position: absolute;
+   font-size: 22px;
   
-  #heart-checkbox {
-    display: none;
-  }
-  
-  #heart-icon {
-    display: none;
-    transition: color 0.3s;
-  }
-  
-  #heart-checkbox:checked + label .fa-solid {
-    display: block;
-    animation: fillHeart 3s forwards;
-  }
-  
-  #heart-checkbox:checked + label .fa-regular {
-    display: none;
+   color: #9356dc;
+   }
+  .unique-icon{
+     position: relative;
+    color: #9356dc;
+    font-size: 22px;
+    opacity: 0;
+    transition: opacity 0.5s;
+   }
+  .heart-button:active .unique-icon {
+      opacity: 1;
+      
   }
    footer{
     background-color:#353535;
@@ -223,13 +228,5 @@ padding-top: 50px;
    
     color: white;
    }
-   form{
-    width: 5px;
-   
-   }
-   input{
-    border: none;
-    background-color: #d2d2d2;
-    margin-top: 2px;
-   }
+  
    
