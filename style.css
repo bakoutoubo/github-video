@@ -5,9 +5,7 @@
  margin: 0;
    font-family:'roboto',sans-serif;
  }
- .container {
-  
- }
+
  .logo{
  
     width: 167px;
@@ -156,6 +154,10 @@ padding-top: 20px;
       margin-left: 20px;
     border-radius: 15px;
     }
+    .card_restaurant a {
+      text-decoration: none;
+      color: black;
+    }
    .image{
 
       width: 100%;
@@ -233,14 +235,43 @@ padding-top: 20px;
    .footer-lien p{
     margin-left: 20px;
    }
+   .card_restaurant{
+    margin-right: 15px;
+    
+   }
+   @media screen and (min-width: 600px){
   
-   @media screen and (min-width: 1025px) {
+    .logo{
+      margin-left: 40%;
+    }
+    .loc{
+      margin-left: 41%;
+    }
+    h1{
+      margin-left: 35%;
+    }
+    .menu p{
+      margin-left:33%;
+    }
+   .button{
+    margin-left: 38%;
+   }
+   .card{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+   }
+   .card2{
+    display: flex;
+    flex-direction: column;
+   }
+   
+    }
+   @media screen and (min-width: 1024px) {
     .logo{
       width: 200px;
       margin-left: 43%;
     }
- 
-     
    .loc{
     display: flex;
     margin-left: 450px;
