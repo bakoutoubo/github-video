@@ -6,10 +6,6 @@
    font-family:'roboto',sans-serif;
 
    }
-   .container{
-  
-    display: flex;
-   }
    .arrow{
     position: absolute;
   margin-left: 10px;
@@ -138,22 +134,21 @@ justify-content: end;
   margin-right: 15px;
  }
  .fa-regular{
- position: absolute;
+  position: absolute;
   font-size: 25px;
- color: #9356dc;
- 
+  color: #9356dc;
+  
 }
 .unique-icon{
   color: #9356dc;
   font-size: 25px;
-position: relative;
-opacity: 0;
+ position: relative;
+ opacity: 0;
   transition: opacity 0.5s;
  }
  
  .heart-button:active .unique-icon {
-   opacity: 1;
-   
+   opacity: 1;   
 }
 .circle{
   font-size: 23px;
@@ -163,13 +158,11 @@ opacity: 0;
   padding-top: 23px;
  padding-left: 18px;
 }
-
 .icon-anim {
   background-color: #99e2d0;
   width: 0%;
   border-radius: 0px 20px 20px 0px;
 }
-
  .PLATS{
   margin-top: 65px;
  }
@@ -224,9 +217,96 @@ footer{
   font-size: 15px;
   margin-left: 50px;
  }
-
+ @media screen and (min-width: 600px){
+  main{
+    margin-top: 0;
+  }
+  .card_desserts,
+.card_plats,
+.card_entrée{
+  width: 200%;  
+}
+.logo{
+  width: 200px;
+  margin-left: 310px;
+ }
+ .icon-anim {
+  background-color: #99e2d0;
+  width: 0%;
+  border-radius: 0px 20px 20px 0px;
+}
+ .footer-lien{
+  display: flex;
+  align-items: center;
+ }
+ footer h2{
+  width: 137px;
+  margin-left: 100px;
+  margin-top: 17px;
+ }
+ .button{
+  margin-left: 300px;
+  width: 30%;
+ }
+ }
  @media screen and (min-width: 1025px) {
-  
+  .logo{
+    width: 200px;
+    height: 34px;
+    margin-left: 500px;
+   margin-bottom: 5px;
+   margin-top: 5px;
+ }
+ main{
+    margin-top: -2.5%;
+    width: 900px;
+    margin-left: 210px;
+  }
+  .image{
+    height:400px ; 
+ }
+ .icon{
+ justify-content: center;
+}
+.icon-anim {
+  background-color: #99e2d0;
+  width: 0%;
+  border-radius: 0px 20px 20px 0px;
+}
+h2{
+  margin-left: 110px;
+}
+hr{
+  width: 5%;
+  margin-left: 110px;
+  }
+.card_desserts,
+.card_plats,
+.card_entrée{
+  width: 200%;  
+}
+.card{
+  margin-left: 100px;
+  width: 80%;
+}
+footer{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100px;
+ }
+ .footer-lien{
+  display: flex;
+  align-items: center;
+ }
+ footer h2{
+  width: 137px;
+  margin-left: 100px;
+  margin-top: 17px;
+ }
+ .button{
+  margin-left: 300px;
+  width: 30%;
+ }
 }
 
 
