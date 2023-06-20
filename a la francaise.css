@@ -4,34 +4,7 @@
 body{
  font-family:'roboto',sans-serif;
  }
- .loader {
-  border: 8px solid #f3f3f3;
-  border-top: 8px solid #3498db;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: spin 1s linear infinite, hide-loader 6s forwards;
-  margin: 0 auto;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes hide-loader {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
+ 
 
  .arrow{
   color: black;
@@ -89,13 +62,47 @@ margin-left: 10px;
 border-color: #99E2D0;
 border-width: 1px;
 }
-.card{
+
+.card1,
+.card2,
+.card3 {
+display: none; /* Les cartes sont initialement cachées */
 display: flex;
 flex-direction: column;
- gap: 20px;
- font-weight: bold;
- margin-top: 25px;
- width: 100%;
+gap: 20px;
+font-weight: bold;
+margin-top: 25px;
+width: 100%;
+}
+
+.card1 {
+animation: fade-in 3s ease 0s forwards;
+}
+
+.card2 {
+animation: fade-in 6s ease 0s forwards;
+}
+
+.card3 {
+animation: fade-in 9s ease 0s forwards;
+}
+
+@keyframes fade-in {
+0% {
+  opacity: 0;
+}
+25% {
+  opacity: 0;
+}
+50% {
+  opacity: 1;
+}
+75% {
+  opacity: 1;
+}
+100% {
+  opacity: 1;
+}
 }
 
 .anim {
@@ -317,11 +324,20 @@ display: flex;
 justify-content: center;
 }
 h2{
-margin-left: 110px;
+margin-left: 20%;
 }
 hr{
 width: 5%;
-margin-left: 110px;
+margin-left: 20%;
+}
+.anim {
+  width: 60%;
+  margin-left: 20%;
+  display: flex;
+  height: 68px;
+   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  cursor: pointer;
 }
 .card_desserts,
 .card_plats,
@@ -353,5 +369,6 @@ width: 30%;
 margin-right: 20px;
 }
 }
+
 
 
