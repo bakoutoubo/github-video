@@ -306,8 +306,8 @@ footer{
   width: 30%;
  }
  .circle{
-  padding-left: 22px;
-  font-size: 26px;
+  padding-left: 30px;
+  font-size: 30px;
   padding-top: 20px;
 }
 footer{
@@ -365,6 +365,7 @@ hr{
   margin-left: 100px;
   width: 80%;
 }
+
 footer{
   display: flex;
   flex-direction: row-reverse;
