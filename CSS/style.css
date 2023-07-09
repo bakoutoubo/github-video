@@ -98,6 +98,7 @@ background-color: #eaeaea;
  }
  
  .button{
+  display: inline-block; /* Permet d'appliquer la largeur et la hauteur */
    width: 218px;
    height: 50px;
    border-radius: 25px;
@@ -114,13 +115,12 @@ background-color: #eaeaea;
  .button:hover{
   filter: brightness(110%);
   box-shadow: 0.5px 0.5px 0.5px 0.5px #7e7e7e;
- 
-
 }
- .button a{
+.white-text {
   color: white;
-  text-decoration: none;
- }
+}
+
+
  h2{
 margin-left: 20px;
 padding-top: 20px;
@@ -284,10 +284,7 @@ padding-top: 20px;
     margin-right: 15px;
     
    }
-   a{
-    text-decoration: none;
-    color: white;
-   }
+  
    @media screen and (min-width: 600px){
     .loader {
       left: 45%; 
@@ -319,6 +316,10 @@ padding-top: 20px;
     flex-direction: row;
     height: 300px;
    }
+   a {
+    text-decoration: none;
+    color: white;
+  }
    }
    
     
@@ -340,16 +341,14 @@ padding-top: 20px;
      height: 280px;
    }
    .menu p{
-    
-    margin-left: 37%;
- 
-  
+    width:44% ;
+    margin-left: 28%;
   }
   
    
    h1{
     width: 645px;
-    margin-left: 26%;
+    margin-left: 25%;
    
     font-size: 40px;
    }

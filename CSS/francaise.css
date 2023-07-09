@@ -76,6 +76,7 @@ hr {
 .card2,
 .card3 {
   display: none;
+  /* Les cartes sont initialement cachées */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -196,6 +197,7 @@ h4 {
   margin-left: 15px;
   font-size: 15px;
   font-weight: 300;
+
 }
 
 .number {
@@ -209,6 +211,7 @@ h4 {
   position: absolute;
   font-size: 25px;
   color: #9356dc;
+
 }
 
 .unique-icon {
@@ -345,7 +348,7 @@ a {
   .circle {
     padding-left: 3%;
     font-size: 20px;
-    padding-top: 24px;
+    padding-top: 25px;
   }
 
   footer {
